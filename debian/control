@@ -1,12 +1,28 @@
 Source: apt-sources-ptux-sdk
-Section: unknown
+Section: devel
 Priority: extra
 Maintainer: Ryan Kuester <rkuester@insymbols.com>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 
 Package: apt-sources-ptux-sdk
 Architecture: all
 Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: APT sources configuration for the Pragmatux SDK (common)
+ This package installs configuration for APT sources containing packages
+ which constitute the Pragmatux SDK. These sources are preferred to sources 
+ at the default priority by means of an APT preference fragment.
+ .
+ This package contains sources common to the SDKs for each target
+ architecture.
+
+Package: apt-sources-ptux-sdk-armel
+Architecture: all
+Depends: apt-sources-ptux-sdk, ${misc:Depends}
+Description: APT sources configuration for the Pragmatux SDK (armel)
+ This package installs configuration for APT sources containing packages
+ which constitute the Pragmatux SDK. These sources are preferred to sources 
+ at the default priority by means of an APT preference fragment.
+ .
+ This package contains sources for the SDK for the armel target
+ architecture.
