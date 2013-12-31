@@ -1,1 +1,1 @@
-deb http://packages.pragmatux.org/sdk 3 main
+deb [arch=amd64 trusted=yes] http://packages.pragmatux.org/sdk 3.0 main
