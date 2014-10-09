@@ -1,1 +1,4 @@
 deb [arch=amd64 trusted=yes] http://packages.pragmatux.org/sdk 3.0 main
+deb-src [trusted=yes] http://packages.pragmatux.org/sdk 3.0 main
+
+deb-src [trusted=yes] http://packages.pragmatux.org/device 3.0 main
